@@ -228,7 +228,8 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-around;
-  color: white;
+  color: white; 
+  padding-bottom: 60px ;
 }
 
 .podcast-stats div {
@@ -249,6 +250,7 @@ body {
   max-width: 1600px;
   margin: 0 auto;
   padding: 80px 40px;
+  /* margin-top: 70px; */
 }
 
 .why-techwave h2 {
@@ -334,10 +336,88 @@ height: 60px;
   line-height: 1.6; 
    opacity: 0.9; 
    
+}  
+
+/* videos section  */
+
+
+.featured-episodes {
+  max-width: 1600px;
+   /* border: 2px solid red; */
+  background: rgba(26, 11, 46, 1); 
+  /* padding-top: 50px; */
+ 
+
 } 
 
+.title {
+  color: #FFFFFF;
+  font-size: 48px;
+  font-weight: 700;
+  padding-top: 80px;
+}
+
+.container-episodes {
+  margin: 0px auto;
+  max-width: 1200px;
+  height: 538px;
+   
+   /* border: 2px solid red;  */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 27px;
+
+}
+.chandler-monica {
+   border-radius: 24px;
+  background: rgba(37, 13, 68, 1);
+     
+   padding-bottom: 10px;
+    
+} 
+.chandler-joey{
+  border-radius: 24px;
+  background: rgba(37, 13, 68, 1);
+     
+   padding-bottom: 10px;
+    
+} 
+.chandler-ross {
+   border-radius: 24px;
+  background: rgba(37, 13, 68, 1);
+     
+   padding-bottom: 10px;
+}
+
+.head-line {
+  width: 380px;
+  height: 215px;
+padding: 16px;
+
+} 
+.head-line h2 {
+  color: #FFFFFF;
+  font-size: 18px;
+font-weight: 600;
+} 
+.head-line p {
+  font-size: 16px;
+font-weight: 400;
+color: #ffffff56;
+
+} 
+.head-line h4 {
+  color:#00FF88;
+}
 
 
+.title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
 
 @media screen and (max-width: 576px) {
   .children,
@@ -405,5 +485,24 @@ height: 60px;
       "box3"
       "box4"
       "box5";
-  }
+  } 
+ 
+   
+  .container-episodes {
+    /* width: 100%; */
+    display: block;
+    flex-direction: column;
+    /* margin-bottom: 200px; */
+  
+  } 
+
+  .title {
+       padding-bottom: 50px;
+       font-size: 20px;
+  } 
+   .chandler-monica, .head-line {
+    width: 100%;
+   
+   }
+
 }
