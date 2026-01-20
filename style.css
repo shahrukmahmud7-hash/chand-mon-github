@@ -360,7 +360,10 @@ height: 60px;
 .container-episodes {
   margin: 0px auto;
   max-width: 1200px;
-  height: 538px;
+     height: 560px; 
+    /* width: 100%; */
+    /* border : 2px solid  red; */
+
    
    /* border: 2px solid red;  */
   display: flex;
@@ -389,7 +392,10 @@ height: 60px;
      
    padding-bottom: 10px;
 }
-
+   iframe {
+    border-top-right-radius: 24px;
+    border-top-left-radius: 24px;
+   }
 .head-line {
   width: 380px;
   height: 215px;
@@ -409,6 +415,9 @@ color: #ffffff56;
 } 
 .head-line h4 {
   color:#00FF88;
+  display: flex;
+  align-items: center;
+  gap: 6px;
 }
 
 
@@ -417,7 +426,69 @@ color: #ffffff56;
   justify-content: center;
   align-items: center;
   text-align: center;
+} 
+
+
+/* host section */
+.alex-kumar {
+  max-width: 1600px;
+  background: rgba(26, 11, 46, 1);
 }
+.meet {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #FFFFFF;
+  padding-top: 100px;
+  padding-bottom: 40px;
+}
+.the-host {
+  max-width: 1200px;
+  
+  height: 280px;
+  background: rgba(53, 17, 101, 0.4);
+  /* border: 2px solid red; */
+  margin: 0 auto;
+  border-radius: 24px;
+  padding: 30px;
+} 
+
+.host {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.host-container h2 {
+       font-size: 32px;
+      font-weight: 700;
+      color: #FFFFFF;
+      padding-bottom: 10px;
+}
+.host-container p {
+     font-size: 16px;
+     font-weight: 400;
+     color: #ffffff56;
+     padding-bottom: 10px;
+} 
+
+/* .host-container img {
+  width: 20px;
+  height: 20px;
+  padding-right: 10px;
+} */
+
+.for-all {
+  width: 20px;
+  height: 20px;
+  border: 1px solid rgba(83, 60, 114, 1);
+  padding: 2px;
+  border-radius: 45%;
+
+}
+
+
+
 
 @media screen and (max-width: 576px) {
   .children,
@@ -489,10 +560,12 @@ color: #ffffff56;
  
    
   .container-episodes {
-    /* width: 100%; */
-    display: block;
+      height:0%;   
+    display: flex;
+    gap: 20px;
     flex-direction: column;
-    /* margin-bottom: 200px; */
+     /* margin-bottom: 200px;  */
+    
   
   } 
 
@@ -503,6 +576,20 @@ color: #ffffff56;
    .chandler-monica, .head-line {
     width: 100%;
    
+   } 
+   .the-host {
+    display: flex;
+    flex-direction: column;
+    height: auto;
    }
-
+   .host {
+       flex-direction: column;
+   }
+   .host-container {
+     display: flex; 
+     align-items: center;
+     justify-content: center;
+    flex-direction: column;
+    /* align-content: center; */
+   }
 }
